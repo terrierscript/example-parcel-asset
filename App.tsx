@@ -11,6 +11,7 @@ export default function App() {
     ;(async () => {
       try {
         const mod = require("./assets/webview/index.html")
+        console.log(mod)
         const asset = Asset.fromModule(mod)
         await asset.downloadAsync()
         const html = await FileSystem.readAsStringAsync(asset.localUri)
