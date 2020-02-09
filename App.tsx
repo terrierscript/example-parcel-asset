@@ -11,25 +11,15 @@ export default function App() {
     ;(async () => {
       try {
         const mod = require("./assets/webview/index.html")
-        // await Asset.loadAsync(mod)
         const asset = Asset.fromModule(mod)
-        // console.log(asset.localUri)
-        // if (asset.localUri) {
-        //   await FileSystem.deleteAsync(asset.localUri)
-        // }
         await asset.downloadAsync()
-        // console.log(asset)
-        // console.log(asset.hash)
         const html = await FileSystem.readAsStringAsync(asset.localUri)
-        // console.log(html)
-        console.log("len", html.length)
         setSource({
-          // html,
-          uri: asset.uri,
+          html,
           baseUrl: "http://localhost"
         })
       } catch (e) {
-        console.log("aa", e)
+        console.error(e)
       }
     })()
   }, [])

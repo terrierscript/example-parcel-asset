@@ -4,7 +4,7 @@ console.log("aaa")
 console.log(document.querySelector("#root"))
 
 const App = () => {
-  return <div>helo!!!!! react</div>
+  return <div>helo!!! react</div>
 }
 
 ReactDOM.render(<App />, document.querySelector("#root"))
