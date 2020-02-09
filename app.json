@@ -20,8 +20,13 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
+    "packagerOpts": {
+      "assetExts": [
+        "html"
+      ]
+    },
     "assetBundlePatterns": [
-      "**/*"
+      "**/**/*"
     ],
     "ios": {
       "supportsTablet": true

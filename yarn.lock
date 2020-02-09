@@ -1129,6 +1129,14 @@
     wcwidth "^1.0.1"
     ws "^1.1.0"
 
+"@shferreira/posthtml-inline-assets@^3.0.0":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@shferreira/posthtml-inline-assets/-/posthtml-inline-assets-3.0.2.tgz#8d3b6ad375f8bc394bf59fbc33043b64b21cfe7b"
+  integrity sha512-Flj6L54Tc17M8p/wbb9YaL01MlX+WQe8gzPTxRb0yF/DYHqgizWEx0XKVeUEHbCGeB14zJ9pVCmCDFBxhc2y3Q==
+  dependencies:
+    file-type "^10.4.0"
+    fse "^4.0.1"
+
 "@types/fbemitter@^2.0.32":
   version "2.0.32"
   resolved "https://registry.yarnpkg.com/@types/fbemitter/-/fbemitter-2.0.32.tgz#8ed204da0f54e9c8eaec31b1eec91e25132d082c"
@@ -2917,6 +2925,11 @@ escape-html@~1.0.3:
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
   integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
 
+escape-string-regexp@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-2.0.0.tgz#a30304e99daa32e23b2fd20f51babd07cffca344"
+  integrity sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
+
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
@@ -3345,6 +3358,11 @@ figures@^2.0.0:
   dependencies:
     escape-string-regexp "^1.0.5"
 
+file-type@^10.4.0:
+  version "10.11.0"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-10.11.0.tgz#2961d09e4675b9fb9a3ee6b69e9cd23f43fd1890"
+  integrity sha512-uzk64HRpUZyTGZtVuvrjP0FYxzQrBf4rojot6J65YMEbwBLB0CWm0CLojVpwpmFmxcE/lkvYICgfcGozbBq6rw==
+
 file-uri-to-path@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
@@ -3480,6 +3498,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
+
+fse@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/fse/-/fse-4.0.1.tgz#9e1db80203933cbe59ed75507f35adf2689ce1e9"
+  integrity sha512-5XLUrweQvJxSJKhBe3XjimHSJ2EUhYOG+K2tLQy8I9kp78Fa3CgUXqxAZWxE9+fsvnI5GVkHl4NDqbf1tSb93Q==
 
 fsevents@^1.2.7:
   version "1.2.11"
@@ -3877,7 +3900,7 @@ inquirer@^3.0.6:
     strip-ansi "^4.0.0"
     through "^2.3.6"
 
-invariant@^2.2.2, invariant@^2.2.4:
+invariant@2.2.4, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -5475,6 +5498,13 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
+parcel-plugin-inliner@^1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-inliner/-/parcel-plugin-inliner-1.0.13.tgz#d09615f3ec583e008a0b461814b38ec25ce76021"
+  integrity sha512-WLvZOHigJtY46G4wBb5ZvT++Z1+A6RAIuJwXxjVkRHyhzkWVdv3/aFI5xpU8BUfxZj2y8IYUINyIxckyNjjo3A==
+  dependencies:
+    "@shferreira/posthtml-inline-assets" "^3.0.0"
+
 parcel@^1.12.4:
   version "1.12.4"
   resolved "https://registry.yarnpkg.com/parcel/-/parcel-1.12.4.tgz#c8136085179c6382e632ca98126093e110be2ac5"
@@ -6305,6 +6335,14 @@ react-native-web@~0.11.7:
     normalize-css-color "^1.0.2"
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.4"
+
+react-native-webview@7.4.3:
+  version "7.4.3"
+  resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-7.4.3.tgz#e00e92e17f7389d84d09f5900652501ff2665915"
+  integrity sha512-4n72B2D7n1xOQSoCSD1qk9D7JksyT4d6nk8QG9guZKZn3KXQL5EejwE2yhh1TxZRQpr+OD3a96rb+rA/UEnvrQ==
+  dependencies:
+    escape-string-regexp "2.0.0"
+    invariant "2.2.4"
 
 "react-native@https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz":
   version "0.61.4"
